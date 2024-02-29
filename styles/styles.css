@@ -1,0 +1,48 @@
+.box {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.bodyBox {
+  padding: 20px;
+}
+
+.custom-button {
+  background-color: "#000"
+}
+
+.headerBox {
+  background-color: #0085B2;
+  color: #FFF;
+  font-size: 16px;
+  padding: 4px;
+}
+
+.input {
+  margin-bottom: 15px
+}
+
+.productBox {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  padding: 10px;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 100px;
+  color: "#FFF"
+} 
+
+.productImage {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}

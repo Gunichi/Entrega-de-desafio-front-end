@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/styles/fluig-style-guide.min.css"
+    />
+    <script src="/scripts/jquery/jquery-3.7.1.min.js"></script>
+    <script src="/scripts/scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <title>VFlows - Teste</title>
+  </head>
+  <body>
+    <div class="fluig-style-guide">
+      <h1>Cadastro Fornecedor/Produto</h1>
+      <form id="suppliedForm">
+        <div class="box">
+          <div class="headerBox">
+            <p>Dados do fornecedor</p>
+          </div>
+          <div class="bodyBox">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="input">
+                  <label> Razão Social </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Razão Social"
+                    id="razaoSocial"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="input">
+                  <label> CNPJ </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="CNPJ"
+                    id="cnpj"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <div class="input">
+                  <label> Nome Fantasia </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Nome Fantasia"
+                    id="nomeFantasia"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="input">
+                  <label> Inscrição Estadual </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Inscrição Estadual"
+                    id="inscricaoEstadual"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="input">
+                  <label> CEP </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="CEP"
+                    id="cep"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 col-md-offset-4">
+                <div class="input">
+                  <label> Inscrição Municipal </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Inscrição Municipal"
+                    id="inscricaoMunicipal"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <div class="input">
+                  <label> Endereço </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Endereço"
+                    id="endereco"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="input">
+                  <label> Número </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Número"
+                    id="numero"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="input">
+                <label> Complemento </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Complemento"
+                  id="complemento"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="input">
+                  <label> Bairro </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Bairro"
+                    id="bairro"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="input">
+                  <label> Munícipo </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Municipio"
+                    id="municipio"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="input">
+                  <label> Estado </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Estado"
+                    id="estado"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="input">
+                  <label> Nome da pessoa de contato </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Contato"
+                    id="nomeContato"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="input">
+                  <label> Telefone </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Telefone"
+                    id="telefone"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="input">
+                  <label> Email </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="headerBox">
+            <p>Produtos</p>
+          </div>
+          <div id="productContainer" class="bodyBox"></div>
+          <div id="productTemplate" style="display: none">
+            <div class="productBox">
+              <div class="row">
+                <div class="col-md-1">
+                  <br />
+                  <img
+                    src="./public/big-box.svg"
+                    alt="Box Image"
+                    class="productImage"
+                  />
+                </div>
+                <div class="col-md-10">
+                  <h3 class="productName">Produto 1</h3>
+                  <div class="col">
+                    <div class="input">
+                      <label> Produto </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Produto"
+                        id="produto"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="input">
+                        <label> Unidade Medida </label>
+                        <select
+                          class="form-control"
+                          id="unidadeMedida"
+                          required
+                        >
+                          <option value="Milímetro">MM</option>
+                          <option value="Centímetro">CM</option>
+                          <option value="Metro">M</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="input">
+                        <label> QDTDE. em estoque </label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          placeholder="Quantidade em estoque"
+                          id="qtdeEstoque"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="input">
+                        <label> Valor Unitário </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Valor Unitário"
+                          id="valorUnitario"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="input">
+                        <label> Valor Total </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Valor total"
+                          id="valorTotal"
+                          readonly
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-md-1">
+                      <button type="button" class="btn btn-danger" onclick="excluirProduto(this)">
+                        Excluir
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bodyBox">
+            <input type="file" id="productFile" style="display: none" />
+            <button
+              type="button"
+              class="btn btn-primary btn-lg btn-success"
+              onclick="selecionarArquivo()"
+            >
+              Adicionar Produto
+            </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="headerBox">
+            <p>Anexos</p>
+          </div>
+          <div class="bodyBox" id="attachmentsList">
+            <!-- Lista de anexos será exibida aqui -->
+          </div>
+          <div class="bodyBox">
+            <input type="file" id="attachmentFile" style="display: none" />
+            <button
+              type="button"
+              class="btn btn-primary btn-lg btn-success"
+              onclick="selecionarAnexo()"
+            >
+              Incluir Anexo
+            </button>
+          </div>
+        </div>
+        <button type="submit" class="btn-lg btn-success" onclick="salvarFornecedor()">
+          Salvar fornecedor
+        </button>
+      </form>
+    </div>
+    <script>
+      var contadorProdutos = 1;
+
+      $(document).on(
+        "input",
+        'input[id^="qtdeEstoque"], input[id^="valorUnitario"]',
+        function () {
+          var qtdeEstoque = $(this)
+            .closest(".row")
+            .find('input[id^="qtdeEstoque"]')
+            .val();
+          var valorUnitario = $(this)
+            .closest(".row")
+            .find('input[id^="valorUnitario"]')
+            .val();
+
+          if (qtdeEstoque !== "" && valorUnitario !== "") {
+            console.log("tem");
+            var valorTotal = qtdeEstoque * valorUnitario;
+            $(this)
+              .closest(".row")
+              .find('input[id^="valorTotal"]')
+              .val(valorTotal.toFixed(2));
+          } else {
+            console.log("sem");
+            $(this).closest(".row").find('input[id^="valorTotal"]').val("");
+          }
+        }
+      );
+
+      function selecionarArquivo() {
+        $("#productFile").click();
+      }
+
+      $("#productFile").on("change", function () {
+        adicionarProduto();
+      });
+
+      function adicionarProduto() {
+        var novaCaixa = $("#productTemplate .productBox").clone();
+
+        novaCaixa.find("#produto").attr("id", "produto" + contadorProdutos);
+        novaCaixa
+          .find("#unidadeMedida")
+          .attr("id", "unidadeMedida" + contadorProdutos);
+        novaCaixa
+          .find("#qtdeEstoque")
+          .attr("id", "qtdeEstoque" + contadorProdutos);
+        novaCaixa
+          .find("#valorUnitario")
+          .attr("id", "valorUnitario" + contadorProdutos);
+        novaCaixa
+          .find("#valorTotal")
+          .attr("id", "valorTotal" + contadorProdutos);
+
+        novaCaixa.find("input").val("");
+        novaCaixa.attr("id", "productBox" + contadorProdutos);
+
+        $("#productContainer").append(novaCaixa);
+
+        contadorProdutos++;
+      }
+    </script>
+  </body>
+</html>
